@@ -1,0 +1,58 @@
+Distributing your Game?
+Be sure to include ANIM.BMP and PIECES.BMP these files are required, and your level won't run without them.
+
+Making changes to ANIM.BMP?
+If you make changes to ANIM.BMP you must delete anim_sprite.bmp and anim_mask.bmp before running your level.
+
+Making changes to PIECES.BMP?
+There are 9 32x32 squares in this file, here is what they are:
+1 = Solid Wall #1
+2 = Blank Ground
+3 = Pushable object
+4 = Object ON ITS target
+5 = Target
+6 = Solid Wall #2
+7 = Solid Wall #3
+8 = Solid Wall #4
+9 = Trick Block (You can walk over this block, but you are unable to push an object through it)
+
+Making changes to your WCF file in notepad?
+here is a legend to help you
+
+[GAME]
+Levels=1     	<Total levels in your game>
+BG.R=0		<RGB values for the background\0)
+BG.G=0
+BG.B=0
+
+[1]		<Level number - Each level is 20 blocks wide by 15 high>
+1=00000000000000000000
+2=00000000000000000000
+3=00000000000000000000
+4=00000000000000000000
+5=00000000000000000000
+6=00000000000000000000
+7=00000000000000000000
+8=00000000000000000000
+9=00000000000000000000
+10=00000000000000000000
+11=00000000000000000000
+12=00000000000000000000
+13=00000000000000000000
+14=00000000000000000000
+15=00000000000000000000
+
+-----
+What are all these numbers?
+
+S = Starting Position
+0 = Background\Nothing
+1 = Solid Wall #1
+2 = Blank Ground
+3 = Pushable object
+4 = Object ON ITS target
+5 = Target
+6 = Solid Wall #2
+7 = Solid Wall #3
+8 = Solid Wall #4
+9 = Trick Block
